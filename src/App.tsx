@@ -1,14 +1,13 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
 import { Provider } from "react-redux";
 import { store } from "./store/configureStore";
-import AppRouter from "./router";
+import HomePage from "./components/HomePage";
 
 const App: React.FC = () => {
   return (
     <Provider store={store}>
-      <AppRouter />
+      <HomePage />
     </Provider>
   );
 };
